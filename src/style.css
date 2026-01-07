@@ -30,7 +30,8 @@ h4 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 800;
   color: var(--accent-slate);
-  letter-spacing: -0.5px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
 }
 
 a {
@@ -57,16 +58,17 @@ a {
 }
 
 .btn-primary {
-  background-color: var(--primary-sage);
+  background: linear-gradient(135deg, var(--primary-sage), #7D9388);
   color: var(--white);
-  border: 2px solid var(--primary-sage);
+  border: none;
+  box-shadow: 0 4px 15px rgba(141, 163, 153, 0.4);
 }
 
 .btn-primary:hover {
-  background-color: transparent;
-  color: var(--primary-sage);
-  transform: translateY(-2px);
-  box-shadow: 0 5px 15px rgba(141, 163, 153, 0.3);
+  background: linear-gradient(135deg, #7D9388, var(--primary-sage));
+  color: var(--white);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(141, 163, 153, 0.5);
 }
 
 .section {
@@ -109,10 +111,11 @@ nav {
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   font-weight: 800;
-  color: var(--primary-sage);
-  letter-spacing: -1px;
+  color: var(--accent-slate);
+  letter-spacing: 2px;
+  text-transform: uppercase;
 }
 
 .nav-links {
@@ -351,8 +354,17 @@ nav {
   }
 
   .mobile-only {
-    display: block !important;
-    margin-top: 2rem;
+    display: flex !important;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  .mobile-only .btn {
+    width: 80%;
+    text-align: center;
+    font-size: 1.1rem;
+    padding: 1.2rem;
   }
 
   .menu-toggle.active span:nth-child(1) {
