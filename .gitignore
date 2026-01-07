@@ -22,3 +22,10 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Private Pitch & Strategy
+sales_proposal.md
+favicon_options.md
+walkthrough.md
+task.md
+implementation_plan.md
