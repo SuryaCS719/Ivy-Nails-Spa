@@ -385,6 +385,13 @@ nav {
 }
 
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 8rem;
+    /* Increased padding to prevent collision with sticky nav */
+    height: auto;
+    min-height: 80vh;
+  }
+
   .hero-content h1 {
     font-size: 2.5rem;
   }
